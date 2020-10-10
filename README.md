@@ -131,7 +131,7 @@ Cloud-based Gluu Server Deployment: Gluu server supports most of the cloud provi
 
 - **Amazon AWS:** Gluu Server also supports installation on Amazon AWS instances with the private address. 
 
-## Cluster Deployment.
+## Cluster Deployment
 
 Gluu Server supports various active-active high availability deployment models.
 
