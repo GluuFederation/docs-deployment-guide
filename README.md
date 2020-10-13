@@ -142,7 +142,7 @@ Gluu Server supports various active-active high availability deployment models.
 **Docker-Kubernetes Cloud Native Implementation:** Kubernetes is an open source container-orchestration system to automatically deploy, scall and manage the application. Gluu Server supports configuration of both cloud (amazon’s EKS, Google’s GKE, DigitalOcean’s DOKS, Microsoft AKS etc.) and local kubernetes (Minikubes, MicroK8s) clusters. 
 
 ## Sizing
-Gluu Server supports applications of various sizes from a few hundreds/ thousands of authentications per day to a billion authentications per day. 
+Gluu Server supports applications of various sizes from a few hundreds/ thousands of authentications per day to a billion authentications per day. There are several parameters that affects the sizing decisions, a carefull consideration of these parameters helps in taking selecting aprorpiate sizing for the organization/ applications. 
 
 - **VM:**
 
