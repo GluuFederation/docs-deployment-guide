@@ -163,3 +163,11 @@ There are several possible deployment stack for Gluu Server as:
 - **Kubernetes:**
    - **Couchbase:**
    - **LDAP/ Redis:**
+
+## Recommended Deployment Strategy
+
+## Common Issues and FAQs
+
+## Deployment Best Practices
+
+## Summary and Further References
