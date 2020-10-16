@@ -144,7 +144,12 @@ Gluu Server supports various active-active high availability deployment models.
 ## Sizing
 Gluu Server supports applications of various sizes from a few hundreds/ thousands of authentications per day to a billion authentications per day. There are several parameters that affects the sizing decisions, a carefull consideration of these parameters helps in taking selecting aprorpiate sizing for the organization/ applications. This section will present an overview and in-depth discussion of these parameters covering how they affect the Gluu server's deployment and performance. These parameters are the total number of users (active & idle), desired authentication throughput, type of authentication application flow, preferred persistence method (database and caching) technique, desired redundancy model, and the deployment stack like VM/ physical server-based to Cloud-native and Kubernetes based deployment.
 
-The following figure depicts these parameters and their impact on the performance.  
+The following table presents details of these parameters and their impact on the performance.
+
+|Parameter        |It's Impact              |
+|-----            |-----------              |
+|Total users      |As the database grows with the users, hence both the active and inactive users have impact on the database size|
+|Authentication Throughput|The desired authentication thoughput is an essential parameter to take the sizing decisions|
 
 
 - **VM:**
