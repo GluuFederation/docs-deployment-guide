@@ -149,9 +149,9 @@ The following table presents details of these parameters and their impact on the
 |Parameter        |It's Impact              |
 |-----            |-----------              |
 |Total users      |As the database size grows with the users as active and inactive users, occupy space. The number of active users also affects the caching size, and ultimately it also plays an important role in the physical memory size.|
-|Authentication Throughput|The desired authentication throughput is an essential parameter to take the sizing decisions as Gluu Server supports low, medium, high to extremely high authentication throughput. Gluu Server deployment on a single VM/ server will meet the low and medium authentication throughput demand of the applications. For extremely large (a billion authentication per day), we recommend Gluu Server deployment with Couchbase, Cloud-Native, and Kubernetes.|
+|Desired Authentication Throughput|The desired authentication throughput is an essential parameter to take the sizing decisions as Gluu Server supports low, medium, high to extremely high authentication throughput. Gluu Server deployment on a single VM/ server will meet the low and medium authentication throughput demand of the applications. For extremely large (a billion authentication per day), we recommend Gluu Server deployment with Couchbase, Cloud-Native, and Kubernetes.|
 |Application Workflow    |The application flow also affects the sizing decision as a single Gluu Server instance (VM/ Physical Server) can efficiently handle the demand of the applications that require simple authentication token generation. For complex application workflows that may require multistep authentication, the involvement of AI for fraud detection, etc. one could think of more sophisticated deployment involving cluster, caching, and efficient persistence method.|  
-|Persistence Method     |Gluu Server supports different persistence methods to cope up with the demand of a variety of applications. It includes several combinations of different databases and caching to support applications of various scales.|
+|Prefered Persistence Method     |Gluu Server supports different persistence methods to cope up with the demand of a variety of applications. It includes several combinations of different databases and caching to support applications of various scales.|
 
 
 - **VM:**
