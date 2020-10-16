@@ -148,7 +148,7 @@ The following table presents details of these parameters and their impact on the
 
 |Parameter        |It's Impact              |
 |-----            |-----------              |
-|Total users      |As the database grows with the users, hence both the active and inactive users have impact on the database size|
+|Total users      |As the database grows with the users, hence both the active and inactive users have impact on the database size. The number of active users also affects the caching size |
 |Authentication Throughput|The desired authentication thoughput is an essential parameter to take the sizing decisions|
 
 
