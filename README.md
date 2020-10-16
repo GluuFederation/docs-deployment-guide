@@ -149,7 +149,7 @@ The following table presents details of these parameters and their impact on the
 |Parameter        |It's Impact              |
 |-----            |-----------              |
 |Total users      |As the database size grows with the users as active and inactive users, occupy space. The number of active users also affects the caching size, and ultimately it also plays an important role in the physical memory size.|
-|Authentication Throughput|The desired authentication thoughput is an essential parameter to take the sizing decisions|
+|Authentication Throughput|The desired authentication throughput is an essential parameter to take the sizing decisions as Gluu Server supports low, medium, high to extremely high authentication throughput. Gluu Server deployment on a single VM/ server will meet the low and medium authentication throughput demand of the applications. For extremely large (a billion authentication per day), we recommend Gluu Server deployment with Couchbase, Cloud-Native, and Kubernetes.|
 
 
 - **VM:**
