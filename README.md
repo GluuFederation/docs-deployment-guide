@@ -137,13 +137,21 @@ Gluu Server also supports the creation of high available deployment using multip
 
 ### Requirement of a Good Cluster
 Configuration of a good cluster is a complex and challenging activity. Several requirements of a good cluster require careful consideration during the planning. This subsection discusses these requirements of an ideal cluster.
+
 **Replication:** 
+
 - **Database:**
+
 - **Cache:**
+
 - **Filesystem:**
+
 **Key Management:**
+
 **Logging:**
+
 **Ease of Deployment and Maintenance :**
+
 **Benchmarking of Each Component:**
 
 Gluu Server supports various active-active high availability deployment models.
