@@ -133,6 +133,19 @@ Cloud-based Gluu Server Deployment: Gluu server supports most of the cloud provi
 
 ## Cluster Deployment
 
+Gluu Server also supports the creation of high available deployment using multiple instances on VMs/ physical server. The Gluu Server cluster is an efficient way to manage the requirements of high demanding applications. 
+
+### Requirement of a Good Cluster
+Configuration of a good cluster is a complex and challenging activity. Several requirements of a good cluster require careful consideration during the planning. This subsection discusses these requirements of an ideal cluster.
+**Replication:** 
+- **Database:**
+- **Cache:**
+- **Filesystem:**
+**Key Management:**
+**Logging:**
+**Ease of Deployment and Maintenance :**
+**Benchmarking of Each Component:**
+
 Gluu Server supports various active-active high availability deployment models.
 
 **Manual:** A difficult to configure choice for a high available Gluu Server cluster across multiple instances is to configure it manually. The cluster requires a minimum of four servers or VMs as two for Gluu Server, one for load balancing and one for redis. This requires a lot of effort towards making sure that the deployment meets the performance requirement. The individual components must be properly tested and benchmarked for the performance requirement. Note*. Manual cluster configuration is not eligible for Gluu support. 
