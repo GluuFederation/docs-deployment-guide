@@ -135,7 +135,9 @@ Cloud-based Gluu Server Deployment: Gluu server supports most of the cloud provi
 
 Gluu Server also supports the creation of high available deployment using multiple instances on VMs/ physical server. The Gluu Server cluster is an efficient way to manage the requirements of high demanding applications. 
 
-### Requirement of a Good ClusterConfiguration of a good cluster is a complex and challenging activity. Several requirements of a good cluster require careful consideration during the planning. This subsection discusses these requirements of an ideal cluster. It is possible to use one server for multiple functionalities like the Gluu server node, load balancer, cache server, etc. However, we recommend using a separate server for these components. 
+### Requirement of a Good Cluster
+
+Configuration of a good cluster is a complex and challenging activity. Several requirements of a good cluster require careful consideration during the planning. This subsection discusses these requirements of an ideal cluster. It is possible to use one server for multiple functionalities like the Gluu server node, load balancer, cache server, etc. However, we recommend using a separate server for these components. 
 
 **Load Balancer:** Gluu recommends the use of Nginx as a load balancer and the Gluu server also supports external load balancers. The load balancer acts as front-end to efficiently interact with the Gluu server clustered nodes.
 
@@ -151,7 +153,7 @@ Gluu Server also supports the creation of high available deployment using multip
 
 **Logging:** Logging on all the components (oxAuth, oxTrust, HTTPD (Apache2), WrenDS, and Redis) of Gluu Servers is an essential requirement of the Gluu Server cluster. 
 
-**Benchmarking of Each Component:**
+**Benchmarking of Each Component:** 
 
 **Ease of Deployment and Maintenance:** From the user's perspective, all of the above requirements and functionalities should be easier to deploy and maintain. Gluu Server has an effective and efficient cluster deployment offering and it is discussed in subsequent paragraphs in this section.
 
