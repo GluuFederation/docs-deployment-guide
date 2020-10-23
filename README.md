@@ -135,9 +135,7 @@ Cloud-based Gluu Server Deployment: Gluu server supports most of the cloud provi
 
 Gluu Server also supports the creation of high available deployment using multiple instances on VMs/ physical server. The Gluu Server cluster is an efficient way to manage the requirements of high demanding applications. 
 
-### Requirement of a Good Cluster
-
-Configuration of a good cluster is a complex and challenging activity. Several requirements of a good cluster require careful consideration during the planning. This subsection discusses these requirements of an ideal cluster. It is possible to use one server for multiple functionalities like the Gluu server node, load balancer, cache server, etc. However, we recommend using a separate server for these components. 
+### Requirement of a Good ClusterConfiguration of a good cluster is a complex and challenging activity. Several requirements of a good cluster require careful consideration during the planning. This subsection discusses these requirements of an ideal cluster. It is possible to use one server for multiple functionalities like the Gluu server node, load balancer, cache server, etc. However, we recommend using a separate server for these components. 
 
 **Load Balancer:** Gluu recommends the use of Nginx as a load balancer and the Gluu server also supports external load balancers. The load balancer acts as front-end to efficiently interact with the Gluu server clustered nodes.
 
@@ -145,17 +143,17 @@ Configuration of a good cluster is a complex and challenging activity. Several r
 
 - **Database:** The database stores authentication-related information and it should have at least one replica to avoid a single point of failure. Each replica will be having the entire authentication-related information.
 
-- **Filesystem:**  Gluu server use Csunc2 to perform the file system replication of clustered nodes. 
+- **Filesystem:**  Gluu server use Csync2 to perform the file system replication of clustered nodes. 
 
 - **Cache:** There should be at least one cache server and there should be multiple cache (Redis) server for high performance.
 
-**Key Management:**
+**Certificate and Key Management:** Most of the Gluu Server components have cryptographic keys and X.509 certificates which are stored in chroot. They may have different key formats and Keystore formats that should be properly managed. 
 
-**Logging:** Logging on all the components (oxAuth, oxTrust, HTTPD (Apache2), WrenDS, and Redis) of Gluu Servers is an essential requirement of the Gluu Server cluster. 
-
-**Ease of Deployment and Maintenance :**
+**Logging:** Logging on all the components (oxAuth, oxTrust, HTTPD (Apache2), WrenDS, and Redis) of Gluu Servers is an essential requirement of the Gluu Server cluster. 
 
 **Benchmarking of Each Component:**
+
+**Ease of Deployment and Maintenance:** From the user's perspective, all of the above requirements and functionalities should be easier to deploy and maintain. Gluu Server has an effective and efficient cluster deployment offering and it is discussed in subsequent paragraphs in this section.
 
 Gluu Server supports various active-active high availability deployment models.
 
@@ -167,8 +165,6 @@ Gluu Server supports various active-active high availability deployment models.
 
 ## Sizing
 Gluu Server supports applications of various sizes from a few hundreds/ thousands of authentications per day to a billion authentications per day. There are several parameters that affects the sizing decisions, a carefull consideration of these parameters helps in taking selecting aprorpiate sizing for the organization/ applications. This section will present an overview and in-depth discussion of these parameters covering how they affect the Gluu server's deployment and performance. These parameters are the total number of users (active & idle), desired authentication throughput, type of authentication application workflow, preferred persistence method (database and caching) technique, desired redundancy model, and the deployment stack like VM/ physical server-based to Cloud-native and Kubernetes based deployment.
-
-
 
 The following table presents details of these parameters and their impact on the performance.
 
