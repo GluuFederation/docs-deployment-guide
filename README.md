@@ -136,15 +136,17 @@ Cloud-based Gluu Server Deployment: Gluu server supports most of the cloud provi
 Gluu Server also supports the creation of high available deployment using multiple instances on VMs/ physical server. The Gluu Server cluster is an efficient way to manage the requirements of high demanding applications. 
 
 ### Requirement of a Good Cluster
-Configuration of a good cluster is a complex and challenging activity. Several requirements of a good cluster require careful consideration during the planning. This subsection discusses these requirements of an ideal cluster.
+Configuration of a good cluster is a complex and challenging activity. Several requirements of a good cluster require careful consideration during the planning. This subsection discusses these requirements of an ideal cluster. It is possible to use one server for multiple functionalities like gluu server node, load balancer, cache server etc. However, we recommend to use separate server for these components. 
 
-**Replication:** 
+**Load Balancer:** Gluu recommends use of Nginx as load balancer and Gluu server also supports external load balancers. Load balancer 
 
-- **Database:**
+**Replication:** Several Gluu Server components should be replicated, specifically the component related to the storage and associated functionalities. The database, cache, and filesystem should have their replicas for high performance and availability. Proper sychnonization of all the replicas is an essential activity for the cluster management.
 
-- **Cache:**
+- **Database:** The database stores autherication related information and it should have atleast one replica to avoid single point of failure. Each replica will be having the entire authentication related information.
 
-- **Filesystem:**
+- **Filesystem:** The Gluu server file system replication  Csysnc
+
+- **Cache:** There should be atleast one cache server and there should be multiple cache (redis) server for high performance.
 
 **Key Management:**
 
