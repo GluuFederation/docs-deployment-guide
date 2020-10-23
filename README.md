@@ -157,6 +157,8 @@ Configuration of a good cluster is a complex and challenging activity. Several r
 
 **Ease of Deployment and Maintenance:** From the user's perspective, all of the above requirements and functionalities should be easier to deploy and maintain. Gluu Server has an effective and efficient cluster deployment offering and it is discussed in subsequent paragraphs in this section.
 
+### Gluu Server Cluster Deployment Models
+
 Gluu Server supports various active-active high availability deployment models.
 
 **Manual:** A difficult to configure choice for a high available Gluu Server cluster across multiple instances is to configure it manually. The cluster requires a minimum of four servers or VMs as two for Gluu Server, one for load balancing and one for redis. This requires a lot of effort towards making sure that the deployment meets the performance requirement. The individual components must be properly tested and benchmarked for the performance requirement. Note*. Manual cluster configuration is not eligible for Gluu support. 
