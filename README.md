@@ -145,7 +145,7 @@ Configuration of a good cluster is a complex and challenging activity. Several r
 
 - **Database:** The database stores authentication-related information and it should have at least one replica to avoid a single point of failure. Each replica will be having the entire authentication-related information.
 
-- **Filesystem:**  Gluu server uses Csync2 to perform the file system replication of clustered nodes. 
+- **Filesystem:**  Gluu server uses Csync2 to perform the file system replication of clustered nodes, to replicate the configuration files.  
 
 - **Cache:** There should be at least one cache server and there can be multiple cache (Redis) server for high performance.
 
@@ -184,7 +184,7 @@ Preferred Deployment Stack        |The different Gluu Server deployment stac
 There are several possible deployment stack for Gluu Server as:
 
 - **VM:**
-- **Kubernetes:**
+- **Kubernetes:** 
    - **Couchbase:**
    - **LDAP/ Redis:**
 
