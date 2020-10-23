@@ -145,13 +145,13 @@ Configuration of a good cluster is a complex and challenging activity. Several r
 
 - **Database:** The database stores authentication-related information and it should have at least one replica to avoid a single point of failure. Each replica will be having the entire authentication-related information.
 
-- **Filesystem:**  Gluu server use Csync2 to perform the file system replication of clustered nodes. 
+- **Filesystem:**  Gluu server uses Csync2 to perform the file system replication of clustered nodes. 
 
-- **Cache:** There should be at least one cache server and there should be multiple cache (Redis) server for high performance.
+- **Cache:** There should be at least one cache server and there can be multiple cache (Redis) server for high performance.
 
 **Certificate and Key Management:** Most of the Gluu Server components have cryptographic keys and X.509 certificates which are stored in chroot. They may have different key formats and Keystore formats that should be properly managed. 
 
-**Logging:** Logging on all the components (oxAuth, oxTrust, HTTPD (Apache2), WrenDS, and Redis) of Gluu Servers is an essential requirement of the Gluu Server cluster. 
+**Logging:** To support the troubleshooting of any issues, logging on all the components (oxAuth, oxTrust, HTTPD (Apache2), WrenDS, and Redis) of Gluu Servers is an essential requirement.  
 
 **Benchmarking of Each Component:** Benchmarking each of the Gluu Server components is an essential requirement of a high-performance cluster. Each application has different performance requirements thus it is good to do separate benchmarking of each component to verify that it achieves the desired performance.  
 
