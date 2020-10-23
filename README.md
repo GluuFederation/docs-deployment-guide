@@ -153,7 +153,7 @@ Configuration of a good cluster is a complex and challenging activity. Several r
 
 **Logging:** Logging on all the components (oxAuth, oxTrust, HTTPD (Apache2), WrenDS, and Redis) of Gluu Servers is an essential requirement of the Gluu Server cluster. 
 
-**Benchmarking of Each Component:** 
+**Benchmarking of Each Component:** Benchmarking each of the Gluu Server components is an essential requirement of a high-performance cluster. Each application has different performance requirements thus it is good to do separate benchmarking of each component to test whether it achieves the desired performance.  
 
 **Ease of Deployment and Maintenance:** From the user's perspective, all of the above requirements and functionalities should be easier to deploy and maintain. Gluu Server has an effective and efficient cluster deployment offering and it is discussed in subsequent paragraphs in this section.
 
