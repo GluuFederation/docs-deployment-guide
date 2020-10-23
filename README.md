@@ -141,7 +141,7 @@ Configuration of a good cluster is a complex and challenging activity. Several r
 
 **Load Balancer:** Gluu recommends the use of Nginx as a load balancer and the Gluu server also supports external load balancers. The load balancer acts as front-end to efficiently interact with the Gluu server clustered nodes.
 
-**Replication:** Several Gluu Server components should be replicated, specifically the component related to the storage and associated functionalities. The database, cache, and filesystem should have their replicas for high performance and availability. Proper synchronization of all the replicas is an essential activity of cluster management.
+**Replication:** Several Gluu Server components should be replicated, specifically the component related to the storage and associated functionalities. The database, cache, and filesystem should have their replicas for high performance and availability. An important activity with a replicated component is setting proper synchronization mechanisms among the replicas of some components.  
 
 - **Database:** The database stores authentication-related information and it should have at least one replica to avoid a single point of failure. Each replica will be having the entire authentication-related information.
 
