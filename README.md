@@ -143,6 +143,9 @@ move data around.  Couchbase also includes a cache service, which can eliminate
 the need for a separate cache component (like Redis), thus reducing the operating
 cost of another piece of infrastructure.
 
+
+#### Operational Considerations for Couchbase
+
 1. Indexing
 1. Replication
 1. Backup-restore
@@ -151,8 +154,6 @@ cost of another piece of infrastructure.
 1. logging
 1. monitoring
 1. management tools
-
-#### Operational Considerations for Couchbase
 
 
 ### RDBMS
