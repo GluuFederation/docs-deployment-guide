@@ -190,10 +190,10 @@ This is the default database when you install Gluu Community Edition.  OpenDJ su
 
 #### Operational Considerations for LDAP
 
-1. Indexing: all searches with scope sub | one must be index. note=unindexed
-1. Replication
-1. Backup-restore: binary backup + ldif backup
-1. Schema management
+1. Indexing: All searches with scope sub | one must be index. By observing the logs
+a user will get hints on which searches should be indexed. The higher etime with unindexed searches signals the performance issues.
+1. Replication:  For replication LDAP server behaves like master and slave. The slave (replica) server will help in avoiding single point of failure by acting as a backup (replica) and in improving the performance by sharing the load with the master server.
+1. Backup-restore: Backup helps in recovery from any unanticipated failures. Mainly there are two options of backup i.e. full backup and icremental bacup. Both the full and incremental backup is recommended as a best practice. There are two options for backup as binary backup and ldif backup.
 1. Suffixes
   1. **o=gluu** This is the main database for storing Gluu runtime operational data.
   1. **o=site** This is the database used by the cache-refresh process for
@@ -202,10 +202,11 @@ This is the default database when you install Gluu Community Edition.  OpenDJ su
   1. **cn=monitor** This is a built-in suffix which collects operational statistics.
   1. **cn=config** This is the internal ldap configuration and should not be
   modified. Use the `dsconfig` tool to manage OpenDJ configuration.
-1. Directory Namespace (DIT)
-1. logging
-1. monitoring
-1. management tools
+1. Directory Namespace (DIT): The Namespace or Directory Information Tree (DIT) is the convention for naming the entries in the LDAP directory.  
+1. Monitoring: Monitoring involves statistics gathering, event monitoring, logging and alerting.  
+1. Logging: Logging helps in troubleshooting of errors and any performance issues.  
+1. Management tools:
+1. Schema management:
 
 ### Couchbase
 
@@ -223,14 +224,14 @@ cost of another piece of infrastructure.
 
 #### Operational Considerations for Couchbase
 
-1. Indexing
-1. Replication
-1. Backup-restore
-1. Schema management
-1. Buckets
-1. logging
-1. monitoring
-1. management tools
+1. Indexing: Couchbase indexes improves the performance of query and search operations. Couchbase supports several forms of indexes as primary, secondary, functional,  full text, etc. During index creation selection of key, order and expression are important attributes to be considered.   
+1. Replication: Couchbase supports two forms of replication namely local/ intra-cluster replication and remote/ cross data center replication (XDCR).
+1. Buckets: The Couchbase buckets are used to store the data persistently or in Memory. The buckets supports auto replication and dynamic scaling using well defined protocols and mechanisms like Database Change Protocol (DCP) and Cross Data Center Replication (XDCR).   Couchbase server uses the buckets to logically group collection of keys and values. A Couchbase cluster supports a maximum of 30 buckets.
+1. Backup-restore: Couchbase has multiple options for backup and restore specially using the backup manager (cbbackupmgr) or using backup and restore tools (cbbackup and cbrestore).
+1. Monitoring: Couchbase server has a decent web-based administration console to monitor the collected data, visualizing it and creation of alerts. It also has REST based queries for historic and current statistics stored in the cluster. Moreover, Couchbase server also stores per node statistics.   
+1. Logging: Couchbase logging facility allows to store important Couchbase server events. It records these events and stores them in log files. The Couchbase web console also displays the cluster-wide significant events on the log screen.  
+1. Schema management:
+1. Management tools: 
 
 
 ### RDBMS
