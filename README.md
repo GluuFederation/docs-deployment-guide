@@ -205,7 +205,7 @@ a user will get hints on which searches should be indexed. The higher etime with
 1. Directory Namespace (DIT): The Namespace or Directory Information Tree (DIT) is the convention for naming the entries in the LDAP directory.  
 1. Monitoring: Monitoring involves statistics gathering, event monitoring, logging and alerting.  
 1. Logging: Logging helps in troubleshooting of errors and any performance issues.  
-1. Management tools:
+1. Management tools: There are several web based tools available for management of LDAP database. 
 1. Schema management:
 
 ### Couchbase
@@ -230,9 +230,8 @@ cost of another piece of infrastructure.
 1. Backup-restore: Couchbase has multiple options for backup and restore specially using the backup manager (cbbackupmgr) or using backup and restore tools (cbbackup and cbrestore).
 1. Monitoring: Couchbase server has a decent web-based administration console to monitor the collected data, visualizing it and creation of alerts. It also has REST based queries for historic and current statistics stored in the cluster. Moreover, Couchbase server also stores per node statistics.   
 1. Logging: Couchbase logging facility allows to store important Couchbase server events. It records these events and stores them in log files. The Couchbase web console also displays the cluster-wide significant events on the log screen.  
+1. Management tools: Couchbase web console is a browser-based interactive tool supports management of Couchbase server features like monitoring the performance and state, configuration of services (like indexing, logging, settings, statistics collection, backup and restore), management of nodes in cluster, setting up XCDR, security management, etc.  
 1. Schema management:
-1. Management tools:
-
 
 ### RDBMS
 
