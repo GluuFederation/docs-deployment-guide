@@ -186,8 +186,7 @@ other data needed for authentication and authorization.
 ### Gluu LDAP
 
 Gluu maintains a fork of OpenDJ in [Github](https://github.com/GluuFederation/gluu-opendj4).
-This is the default database when you install Gluu Community Edition.  OpenDJ supports
-multi-master replication (MMR)--i.e. changes to any instance propagate to other instances.
+This is the default database when you install Gluu Community Edition.  OpenDJ supports multi-master replication (MMR)--i.e. changes to any instance propagate to other instances.
 
 #### Operational Considerations for LDAP
 
