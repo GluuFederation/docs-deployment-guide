@@ -231,7 +231,7 @@ cost of another piece of infrastructure.
 1. Monitoring: Couchbase server has a decent web-based administration console to monitor the collected data, visualizing it and creation of alerts. It also has REST based queries for historic and current statistics stored in the cluster. Moreover, Couchbase server also stores per node statistics.   
 1. Logging: Couchbase logging facility allows to store important Couchbase server events. It records these events and stores them in log files. The Couchbase web console also displays the cluster-wide significant events on the log screen.  
 1. Schema management:
-1. Management tools: 
+1. Management tools:
 
 
 ### RDBMS
